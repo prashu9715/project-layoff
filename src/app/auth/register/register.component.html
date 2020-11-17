@@ -1,0 +1,65 @@
+<div class="form-div">
+    <span class="form-title">Register</span>
+  <form>
+    <div class="row">
+      <div class="field">
+        <div class="label">
+          <label for="first-name">First Name</label>
+        </div>
+        <div class="control">
+          <input type="text" name="firstName" id="first-name" required/>
+        </div>
+      </div>
+      <div class="field">
+        <div class="label">
+          <label for="last-name">Last Name</label>
+        </div>
+        <div class="control">
+          <input type="text" name="lastName" id="last-name" required/>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <div class="label">
+          <label for="email">Email</label>
+        </div>
+        <div class="control">
+          <input type="email" name="email" id="email" required/>
+        </div>
+      </div>
+      <div class="field">
+        <div class="label">
+          <label for="mobile">Mobile</label>
+        </div>
+        <div class="control">
+          <input type="number" name="mobile" id="mobile" required/>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="field">
+      <div class="label">
+        <label for="password">Password</label>
+      </div>
+      <div class="control">
+        <input type="text" name="password" id="password" required/>
+      </div>
+    </div>
+    <div class="field">
+      <div class="label">
+        <label for="password-conf">Confirm Password</label>
+      </div>
+      <div class="control">
+        <input type="password" name="passwordConf" id="password-conf" required/>
+      </div>
+    </div>
+  </div>
+    <div class="btn-control">
+      <input type="submit" />
+      <span class="login-link">Already have account,<a routerLink="../login">Login</a></span>
+    </div>
+  </form>
+</div>

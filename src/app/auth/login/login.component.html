@@ -1,0 +1,26 @@
+<div class="login-div">
+  <span class="form-title">Login</span>
+  <div *ngIf="isError" class="alert-msg">Please fill all the fields</div>
+  <form #f="ngForm" (ngSubmit)="login(f)">
+    <div class="row">
+      <div class="col-30">
+        <label for="user-name">Email / Mobile</label>
+      </div>
+      <div class="col-70">
+        <input id="user-name" name="userName" ngModel type="text" required/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-30">
+        <label for="password">Password</label>
+      </div>
+      <div class="col-70">
+        <input id="password" name="password" ngModel type="password" required/>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" />
+      <span class="register-link">To Register,<a routerLink="../register">Click Here</a></span>
+    </div>
+  </form>
+</div>
